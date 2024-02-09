@@ -66,7 +66,7 @@ int main(){
 	while(getline(student_file,textline)){
 		student s; 
 
-		char name[50];
+		char name[50]; //
 		sscanf(textline.c_str(),"%[^,],%d,%c,%f" , name, &s.id, &s.gender, &s.gpa); // string ใช้ไม่ได้ เปลี่ยนเป็น char[50] มันไม่ใช่ค่าใส่ค่า 
 		s.name = name;   //ให้รู้ค่าทีหลังได้
 
